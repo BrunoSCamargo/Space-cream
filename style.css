@@ -34,7 +34,7 @@ header {
 }
 
 header img {
-  margin-top: 3.2rem;
+  margin: 2rem;
 }
 
 header h1 {
@@ -226,6 +226,65 @@ main section {
   
   nav p {
     color: #fff;
+  }
+  
+  .IceCream1 {
+    grid-area: IceCream1;
+  }
+  .IceCream2 {
+    grid-area: IceCream2;
+  }
+  .IceCream3 {
+    grid-area: IceCream3;
+  }
+  .IceCream4 {
+    grid-area: IceCream4;
+  }
+  .IceCream5 {
+    grid-area: IceCream5;
+  }
+  .IceCream6 {
+    grid-area: IceCream6;
+  }
+  
+  main section {
+    grid-template-areas: "IceCream1 IceCream5 IceCream3" "IceCream4 IceCream5 IceCream6" "IceCream4 IceCream2 IceCream6";
+  }
+  
+}
+
+@media (min-width: 1500px) {
+  .page {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 37.7rem ;
+  }
+
+  header h1 {
+    padding: 2rem 7rem;
+  }
+
+  nav{
+    background: #8E9AAF;
+    height: 100vh;
+  }
+  
+  nav p {
+    color: #fff;
+  }
+
+  main .card img {
+    width: 35rem;
   }
   
   .IceCream1 {
