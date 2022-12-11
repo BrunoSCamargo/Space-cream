@@ -6,7 +6,9 @@ Se atente ao conteúdo que foi passado na aula. Portanto, **nesse** desafio, lem
 - Grid;
 - Animações e transições, como visto em aula;
 - Media queries.
+## Screenshot  
 
+<img src="/imagens/Captura de tela 2022-12-10 220507.png" alt="">
 
 ## 🔗 Links
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/BrunoSCamargo)
