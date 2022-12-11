@@ -200,7 +200,6 @@ main section {
 
 @media (min-width: 1144px) {
   .page {
-    border-top: 1px solid red;
     width: 100vw;
     height: 100vh;
 
