@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Palanquin&family=Staatliches&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background: #EFF1FF;
+
+  font-family: 'Staatliches', cursive;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 38.4rem;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  height: 27.9rem;
+  text-align: center;
+
+  background-color: #8E9AAF;
+}
+
+header img {
+  margin-top: 3.2rem;
+}
+
+header h1 {
+  background-color:#CBC0D3;
+
+  font-weight: 400;
+  font-size: 4.0rem;
+  line-height: 3.4rem;
+
+  color: #FFFFFF;
+}
+
+header h1 {
+  padding: 8px 0;
+}
+
+nav {
+  margin-bottom: 6.5rem;
+  text-align: center;
+  padding: 1.4rem 3.2rem 0;
+}
+
+nav p {
+  font-family: 'Palanquin', sans-serif;
+
+  color: #23053A;
+}
+
+main section {
+  display: grid;
+  gap: 32px;
+}
+
+.pagecard {
+  width: 38.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: auto;
+}
+
+.card {
+  position: relative;
+}
+
+.card h2 {
+  position: absolute;
+  right: 1.6rem;
+  top: 1.6rem;
+
+  background-color: #FEEAFA;
+  color: #4A4E69;
+  border-radius: 2rem;
+  width: 8rem;
+
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 3.4rem;
+  text-align: center;
+
+  animation-name: h2dow;
+  animation-duration: 1s;
+}
+
+.card img {
+  width: 32.0rem;
+
+  animation-name: imgup;
+  animation-duration: 1s;
+  transition: all 400ms;
+  filter: contrast(0.6);
+}
+
+.card img:hover {
+  transform: scale(1.1);
+  filter: contrast(1);
+} 
+
+footer {
+  margin-top: 5rem;
+
+  font-family: 'Open Sans' sans-serif;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+
+  color: #4A4E69;
+}
+
+footer a {
+  text-decoration: none;
+  color: #ee95dc;
+}
+
+footer a:hover {
+  color: #db1bb5;
+}
+
+@keyframes imgup {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes h2dow {
+  0% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 700px) {
+
+
+
+.IceCream1 {
+  grid-area: IceCream1;
+}
+.IceCream2 {
+  grid-area: IceCream2;
+}
+.IceCream3 {
+  grid-area: IceCream3;
+}
+.IceCream4 {
+  grid-area: IceCream4;
+}
+.IceCream5 {
+  grid-area: IceCream5;
+}
+.IceCream6 {
+  grid-area: IceCream6;
+}
+
+main section {
+  grid-template-areas: "IceCream1 IceCream5 IceCream3" "IceCream4 IceCream5 IceCream6" "IceCream4 IceCream2 IceCream6";
+}
+.page {
+  width: 100%;
+  height:72rem;
+
+  display: flex;
+  align-items: flex-start;
+}
+.card img {
+  width: 22rem;
+}
+
+}
+
+@media (min-width: 1144px) {
+  .page {
+    border-top: 1px solid red;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 37.7rem ;
+  }
+
+  header h1 {
+    padding: 2rem 7rem;
+  }
+
+  nav{
+    background: #8E9AAF;
+    height: 100vh;
+  }
+  
+  nav p {
+    color: #fff;
+  }
+  
+  .IceCream1 {
+    grid-area: IceCream1;
+  }
+  .IceCream2 {
+    grid-area: IceCream2;
+  }
+  .IceCream3 {
+    grid-area: IceCream3;
+  }
+  .IceCream4 {
+    grid-area: IceCream4;
+  }
+  .IceCream5 {
+    grid-area: IceCream5;
+  }
+  .IceCream6 {
+    grid-area: IceCream6;
+  }
+  
+  main section {
+    grid-template-areas: "IceCream1 IceCream5 IceCream3" "IceCream4 IceCream5 IceCream6" "IceCream4 IceCream2 IceCream6";
+  }
+  
+}
